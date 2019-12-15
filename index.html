@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <Title>grid moma</Title>
+   <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+   <style type="text/css">
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+         }
+       body{
+           font-family: 'Sulphur Point', sans-serif;
+       }
+       h2{
+           font-size: 2.2em;
+           line-height: 0.9;
+       }
+       h3{
+           font-size: 1em;
+       }
+       .container{
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(3, 200px);
+       }
+       .caixa{
+           background: white;
+       }
+       .c1{
+           background: #FFCD00;
+       }
+       .c4{
+           background: blue;
+       }
+       .c5{
+           background: black;
+           color: white;
+      
+       
+       
+       
+       }
+       .c1, .c4, .c5{
+           grid-column: 2 span;
+           display: flex;
+           flex-direction: column;
+           padding: 1.3em 2.3em;
+           
+       }
+       .c2, .c3, .c6{
+           grid-column: 3 span;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       img{
+           object-fit: cover;
+           height: 100%;
+           width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa c1">
+            <h2>La romería de San Isidro</h2>
+            <h3>Francisco de Goya</h3>
+        </div>
+        <div class="caixa c2">
+            <img src="img/la%20romar%C3%ADa%20de%20San%20isidro.jpg" alt="">
+        </div>
+        <div class="caixa c3">
+            <img src="img/golconda.jpg">
+        </div>
+        
+        <div class="caixa c4">
+            <h2>Golconda</h2>
+            <h3>René Magritte</h3>
+        </div>
+        <div class="caixa c5">
+            <h2>En el Moulin Rouge</h2>
+            <h3>Toulouse Lautrec</h3>
+        </div>
+        <div class="caixa c6">
+            <img src="img/toulouse.jpg">
+        </div>
+        
+    </div>
+</body>
+</html>
